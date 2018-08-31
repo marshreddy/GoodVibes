@@ -34,7 +34,7 @@ fn handle_connection(mut stream: TcpStream) {
      
     if buffer.starts_with(get) {
         //This is the message that is sent to Alexa and to the offerzen satelite        
-        let contents = fs::read_to_string("/Users/Marsh/Documents/GitHub/GoodVibes/hello/src/response.json").unwrap();
+        let contents = fs::read_to_string("file/path/to/response.json").unwrap();
 
         let response = format!("HTTP/1.1 200 OK\r\n\r\n{}", contents);
     
@@ -47,7 +47,7 @@ fn handle_connection(mut stream: TcpStream) {
 
     } else {
         // This reads the response from the offerzen satellite, and then posts to slack.    
-        let contents = fs::read_to_string("/Users/Marsh/Documents/GitHub/GoodVibes/hello/src/blank.json").unwrap();
+        let contents = fs::read_to_string("file/path/to/response.json").unwrap();
 
         let response = format!("HTTP/1.1 200 OK\r\n\r\n{}", contents);
 
@@ -56,7 +56,7 @@ fn handle_connection(mut stream: TcpStream) {
         stream.write(response.as_bytes()).unwrap();
         stream.flush().unwrap();
 
-        let slack = Slack::new("https://hooks.slack.com/services/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").unwrap();
+        let slack = Slack::new("Slack Webhook url").unwrap();
         let p = PayloadBuilder::new()
       .text("Good Vibes are coming!!!")
       .build()
