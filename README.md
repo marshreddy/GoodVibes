@@ -81,11 +81,14 @@ in main.rs, update the address for this slack channel using the URL you copied a
 
 ## User's Experience
  - try to explain in detail what the user can expect to see at each step. Would have liked to include screenshots, but ran out of time.
- 
+ - i would have liked to move the strings that point to the josn files, and urls of various endpoints to the top of the main.rs file, but because I'm not so familiar with RUST, I couldn't do this without breaking stuff.
 
 
 ## Familiarity
 Alexa Skills - none
+
 ngrok - none
+
 Rust - none
+
 Slack Webhooks - some familiarity - connecting existing webhooks. 
