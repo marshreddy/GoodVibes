@@ -1,0 +1,16 @@
+{
+    "version": "string",
+    "sessionAttributes": {
+      "key": "value"
+    },
+    "response": {
+      "outputSpeech": {
+        "type": "PlainText",
+        "text": "Good vibes are coming!",
+        "ssml": "<speak>Good vibes are coming</speak>",
+        "playBehavior": "REPLACE_ENQUEUED"      
+      },
+      "shouldEndSession": true
+    }
+  }
+  
