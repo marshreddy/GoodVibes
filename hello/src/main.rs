@@ -1,10 +1,11 @@
 extern crate slack_hook;
+extern crate hyper;
 use slack_hook::{Slack, PayloadBuilder};
 use std::io::prelude::*;
 use std::net::TcpStream;
 use std::net::TcpListener;
 use std::fs;
-
+use hyper::header::{Headers, Authorization};
 
 fn main() {
     //This listener is setup to listen for Alexa commands from the Happy Sat invocation 
@@ -38,7 +39,15 @@ fn handle_connection(mut stream: TcpStream) {
         stream.write(response.as_bytes()).unwrap();
         stream.flush().unwrap();
 
-        post_to_offerzen_sat();
+        let mut headers = Headers::new();
+        headers.set(
+            Authorization(
+                Basic {
+                username: "rust".to_owned(),
+                password: Some("4mm/JCeYekFUcqv0f6du0A==".to_owned())
+                }
+            )
+        );
 
     } else {
         // This reads the response from the offerzen satellite, and then posts to slack.    
@@ -65,14 +74,5 @@ fn handle_connection(mut stream: TcpStream) {
     }
 }
 
-fn post_to_offerzen_sat() {
 
-
-    
-}
-
-
-
-
-}
 
