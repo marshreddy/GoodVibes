@@ -3,7 +3,7 @@
 
 ## A. Set up Rust and boot the rust server
 
-install rust:
+To install rust:
 		$ curl https://sh.rustup.rs -sSf | sh
 
 create a new project called hello, that listens for the Alexa post and responds accordingly.
@@ -14,6 +14,7 @@ main.rs contains all the code the RUST server needs to listen out for the Alexa 
 
  to run the hello listener:
  		$cargo run
+When you make edits to the main.rs file, ensure that you cntrl-c in the console to quite rust, and restart it using $ cargo run.
 
 
 ## B. Run ngrok
@@ -21,23 +22,24 @@ main.rs contains all the code the RUST server needs to listen out for the Alexa 
 install ngrok - https://dashboard.ngrok.com/get-started
 
  Download the binary file and unzip it: 
- $ unzip /path/to/ngrok.zip
+ 		$ unzip /path/to/ngrok.zip
 
  Copy the prompt from step 3 of the get started page to connect your account (it is already populated with your unique key)
-$./ngrok authtoken 6vbXx7z5PcTCtTzuJTrUp_39rEdmpyRqK6Qfd8z38uB
+ 
+		$./ngrok authtoken 6vbXx7z5PcTCtTzuJTrUp_39rEdmpyRqK6Qfd8z38uB
 
 To start ngrok on port 443:
 
-$./ngrok http 443
+		$./ngrok http 443
 
 Go to localhost:4040 to view the ngrok dashboard, where you can inspect all requests. 
+Take note of the https:/... forwarding address in the terminal. You will use this to set up Alexa.
 
 ## C. Invoke the Alexa skill and intent
 
-In amazon developer console, create new custom skill and add this JSON file via the JSON editor. Save this setup. Later, you will set Endpoint to point to the ngrok forwarding address in step 5.
+In amazon developer console, create new custom skill and add the happy sat.json file via the JSON editor. 
 
-Called happy sat. 
-Use the following requests:
+Happy sat is compatible with the following alexa prompts:
 
     Alexa ask happy sat to :
 
@@ -53,9 +55,15 @@ Use the following requests:
 
 ## D. Connect Alexa to ngrok
 
-Use your forwarding addresses in the ngrok terminal to configure Amazon Alexa to point to your server, under Endpoints in Alexa Skills . Append the forwarding address as follows, so that the server knows to handle this in a unique way.
-
+Under the endpoint tab Use your forwarding addresses in the ngrok terminal (Step B) to configure your amazon alexa skill to point to your server. 
+Select the https button, then in the default region field, input your relevant ngrok address, appended as follows, so that the server knows to handle this in a unique way.
+[ngrok forwarding address]/alexa
 https://a4a512d8.ngrok.io/alexa
+
+
+Save your endpoints and go back to invocation tab.
+Click on save model and build model.
+Once the build has successfully completed, click on Test, and test your skill using the phrases above. Provided your RUST server is running, you should recieve the response "Good vibes are coming!".
 
 ## E. Configure Slack
 ON APi.slack.com, creat a new app.
@@ -68,9 +76,12 @@ Click on Add New Webhook to Workspace. You will be directed to a new page where 
 
 Select your channel, and you will be returned to incoming webhooks page. Copy the webhook URL for use in your external applciation, or use the Sample curl request.
 
+in main.rs, update the address for this slack channel using the URL you copied above.
+
 
 ## User's Experience
- - try to explain in detail what the user can expect to see at each step. I could add more detail and be a bit clearer, but I've spent more than four hours on it.
+ - try to explain in detail what the user can expect to see at each step. Would have liked to include screenshots, but ran out of time.
+ 
 
 
 ## Familiarity
