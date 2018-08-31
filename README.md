@@ -1,7 +1,7 @@
 # GoodVibes
 
 
-##A. Set up Rust and boot the rust server
+## A. Set up Rust and boot the rust server
 
 install rust:
 		$ curl https://sh.rustup.rs -sSf | sh
@@ -16,7 +16,7 @@ main.rs contains all the code the RUST server needs to listen out for the Alexa 
  		$cargo run
 
 
-##B. Run ngrok
+## B. Run ngrok
 
 install ngrok - https://dashboard.ngrok.com/get-started
 
@@ -51,13 +51,13 @@ Use the following requests:
         send us good vibes
 
 
-##D. Connect Alexa to ngrok
+## D. Connect Alexa to ngrok
 
 Use your forwarding addresses in the ngrok terminal to configure Amazon Alexa to point to your server, under Endpoints in Alexa Skills . Append the forwarding address as follows, so that the server knows to handle this in a unique way.
 
 https://a4a512d8.ngrok.io/alexa
 
-##E. Configure Slack
+## E. Configure Slack
 ON APi.slack.com, creat a new app.
 Enable incoming webhooks.
 You will need to request admin approval from your slack workspace admin to be able to add this app and assign it to a channel.
@@ -69,11 +69,11 @@ Click on Add New Webhook to Workspace. You will be directed to a new page where 
 Select your channel, and you will be returned to incoming webhooks page. Copy the webhook URL for use in your external applciation, or use the Sample curl request.
 
 
-##User's Experience
+## User's Experience
  - try to explain in detail what the user can expect to see at each step. I could add more detail and be a bit clearer, but I've spent more than four hours on it.
 
 
-##Familiarity
+## Familiarity
 Alexa Skills - none
 ngrok - none
 Rust - none
