@@ -4,16 +4,20 @@
 ## A. Set up Rust and boot the rust server
 
 To install rust:
+		
 		$ curl https://sh.rustup.rs -sSf | sh
 
 create a new project called hello, that listens for the Alexa post and responds accordingly.
+		
 		$ cargo new hello
 		$ cd hello
 
 main.rs contains all the code the RUST server needs to listen out for the Alexa prompt, respond appropriately, and trigger posts to the offerzen satellite and the relevant slack channel
 
  to run the hello listener:
- 		$cargo run
+ 		
+		$cargo run
+		
 When you make edits to the main.rs file, ensure that you cntrl-c in the console to quite rust, and restart it using $ cargo run.
 
 
@@ -22,7 +26,8 @@ When you make edits to the main.rs file, ensure that you cntrl-c in the console 
 install ngrok - https://dashboard.ngrok.com/get-started
 
  Download the binary file and unzip it: 
- 		$ unzip /path/to/ngrok.zip
+ 		
+		$ unzip /path/to/ngrok.zip
 
  Copy the prompt from step 3 of the get started page to connect your account (it is already populated with your unique key)
  
@@ -37,7 +42,7 @@ Take note of the https:/... forwarding address in the terminal. You will use thi
 
 ## C. Invoke the Alexa skill and intent
 
-In amazon developer console, create new custom skill and add the happy sat.json file via the JSON editor. 
+In amazon developer console, create new custom skill and add the "happy sat.json" file via the JSON editor. 
 
 Happy sat is compatible with the following alexa prompts:
 
@@ -57,13 +62,16 @@ Happy sat is compatible with the following alexa prompts:
 
 Under the endpoint tab Use your forwarding addresses in the ngrok terminal (Step B) to configure your amazon alexa skill to point to your server. 
 Select the https button, then in the default region field, input your relevant ngrok address, appended as follows, so that the server knows to handle this in a unique way.
-[ngrok forwarding address]/alexa
-https://a4a512d8.ngrok.io/alexa
+
+	[ngrok forwarding address]/alexa
+	https://a4a512d8.ngrok.io/alexa
 
 
 Save your endpoints and go back to invocation tab.
 Click on save model and build model.
-Once the build has successfully completed, click on Test, and test your skill using the phrases above. Provided your RUST server is running, you should recieve the response "Good vibes are coming!".
+Once the build has successfully completed, click on Test, and test your skill using the phrases above. Provided your RUST server is running, you should recieve the response 
+	
+	"Good vibes are coming!".
 
 ## E. Configure Slack
 ON APi.slack.com, creat a new app.
