@@ -42,7 +42,7 @@ Take note of the https:/... forwarding address in the terminal. You will use thi
 
 ## C. Invoke the Alexa skill and intent
 
-In amazon developer console, create new custom skill and add the happy sat.json file via the JSON editor. 
+In amazon developer console, create new custom skill and add the "happy sat.json" file via the JSON editor. 
 
 Happy sat is compatible with the following alexa prompts:
 
@@ -62,13 +62,16 @@ Happy sat is compatible with the following alexa prompts:
 
 Under the endpoint tab Use your forwarding addresses in the ngrok terminal (Step B) to configure your amazon alexa skill to point to your server. 
 Select the https button, then in the default region field, input your relevant ngrok address, appended as follows, so that the server knows to handle this in a unique way.
-[ngrok forwarding address]/alexa
-https://a4a512d8.ngrok.io/alexa
+
+	[ngrok forwarding address]/alexa
+	https://a4a512d8.ngrok.io/alexa
 
 
 Save your endpoints and go back to invocation tab.
 Click on save model and build model.
-Once the build has successfully completed, click on Test, and test your skill using the phrases above. Provided your RUST server is running, you should recieve the response "Good vibes are coming!".
+Once the build has successfully completed, click on Test, and test your skill using the phrases above. Provided your RUST server is running, you should recieve the response 
+	
+	"Good vibes are coming!".
 
 ## E. Configure Slack
 ON APi.slack.com, creat a new app.
