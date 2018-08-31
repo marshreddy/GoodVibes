@@ -1,15 +1,15 @@
 extern crate slack_hook;
-extern crate hyper;
+//extern crate hyper;
 use slack_hook::{Slack, PayloadBuilder};
 use std::io::prelude::*;
 use std::net::TcpStream;
 use std::net::TcpListener;
 use std::fs;
-use hyper::service::service_fn_ok;
-use std::io::{self, Write};
-use hyper::Client;
-use hyper::rt::{self, Future, Stream};
-use hyper::{Method, Request};
+// use hyper::service::service_fn_ok;
+// use std::io::{self, Write};
+// use hyper::Client;
+// use hyper::rt::{self, Future, Stream};
+// use hyper::{Method, Request};
 
 fn main() {
     //This listener is setup to listen for Alexa commands from the Happy Sat invocation 
@@ -72,28 +72,28 @@ fn handle_connection(mut stream: TcpStream) {
 
     fn post_to_offerzen_sat() {
 
-        let json = r#"{"library":"hyper"}"#;
-        let uri: hyper::Uri = "https://make.offerzen.com/satellite/beam.json".parse().unwrap();
-        let mut req = Request::new(Body::from(json));
-        *req.method_mut() = Method::POST;
-        *req.uri_mut() = uri.clone();
-        req.headers_mut().insert(
-            hyper::header::CONTENT_TYPE,
-            HeaderValue::from_static("application/json")
-        );
+        // let json = r#"{"library":"hyper"}"#;
+        // let uri: hyper::Uri = "https://make.offerzen.com/satellite/beam.json".parse().unwrap();
+        // let mut req = Request::new(Body::from(json));
+        // *req.method_mut() = Method::POST;
+        // *req.uri_mut() = uri.clone();
+        // req.headers_mut().insert(
+        //     hyper::header::CONTENT_TYPE,
+        //     HeaderValue::from_static("application/json")
+        // );
 
-        let post = client.request(req).and_then(|res| {
-            println!("POST: {}", res.status());
+        // let post = client.request(req).and_then(|res| {
+        //     println!("POST: {}", res.status());
 
-            res.into_body().concat2()
-});
-
-
-    
+        //     res.into_body().concat2()
     }
 
 
-
-
+    
 }
+
+
+
+
+
 
