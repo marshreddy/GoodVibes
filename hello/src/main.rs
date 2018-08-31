@@ -29,7 +29,7 @@ fn handle_connection(mut stream: TcpStream) {
 
     stream.read(&mut buffer).unwrap();
 
-    let get = b"GET / HTTP/1.1\r\n";
+    let get = b"GET /alexa HTTP/1.1\r\n";
 
      
     if buffer.starts_with(get) {
