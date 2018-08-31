@@ -4,16 +4,20 @@
 ## A. Set up Rust and boot the rust server
 
 To install rust:
+		
 		$ curl https://sh.rustup.rs -sSf | sh
 
 create a new project called hello, that listens for the Alexa post and responds accordingly.
+		
 		$ cargo new hello
 		$ cd hello
 
 main.rs contains all the code the RUST server needs to listen out for the Alexa prompt, respond appropriately, and trigger posts to the offerzen satellite and the relevant slack channel
 
  to run the hello listener:
- 		$cargo run
+ 		
+		$cargo run
+		
 When you make edits to the main.rs file, ensure that you cntrl-c in the console to quite rust, and restart it using $ cargo run.
 
 
@@ -22,7 +26,8 @@ When you make edits to the main.rs file, ensure that you cntrl-c in the console 
 install ngrok - https://dashboard.ngrok.com/get-started
 
  Download the binary file and unzip it: 
- 		$ unzip /path/to/ngrok.zip
+ 		
+		$ unzip /path/to/ngrok.zip
 
  Copy the prompt from step 3 of the get started page to connect your account (it is already populated with your unique key)
  
