@@ -1,31 +1,29 @@
 # GoodVibes
 
 
-A. Set up Rust and boot the rust server
+##A. Set up Rust and boot the rust server
 
 install rust:
-$ curl https://sh.rustup.rs -sSf | sh
+		$ curl https://sh.rustup.rs -sSf | sh
 
-create a new project called hello, that listensfor the alexa post and responds accordingly.
+create a new project called hello, that listens for the Alexa post and responds accordingly.
+		$ cargo new hello
+		$ cd hello
 
-$ cargo new hello
-$ cd hello
-
-in main.rs, create a listener on 127.0.0.1:443
- respond with a http 200 header, and a JSON packet to tell Alexa that everything's ok.
+main.rs contains all the code the RUST server needs to listen out for the Alexa prompt, respond appropriately, and trigger posts to the offerzen satellite and the relevant slack channel
 
  to run the hello listener:
- $cargo run
+ 		$cargo run
 
 
-B. Run ngrok
+##B. Run ngrok
 
 install ngrok - https://dashboard.ngrok.com/get-started
 
  Download the binary file and unzip it: 
  $ unzip /path/to/ngrok.zip
 
- Copy the prompt from step 3 of this setup page to connect your account (it is already populated with your unique key)
+ Copy the prompt from step 3 of the get started page to connect your account (it is already populated with your unique key)
 $./ngrok authtoken 6vbXx7z5PcTCtTzuJTrUp_39rEdmpyRqK6Qfd8z38uB
 
 To start ngrok on port 443:
@@ -34,7 +32,7 @@ $./ngrok http 443
 
 Go to localhost:4040 to view the ngrok dashboard, where you can inspect all requests. 
 
-C. Invoke the Alexa skill and intent
+## C. Invoke the Alexa skill and intent
 
 In amazon developer console, create new custom skill and add this JSON file via the JSON editor. Save this setup. Later, you will set Endpoint to point to the ngrok forwarding address in step 5.
 
@@ -53,13 +51,13 @@ Use the following requests:
         send us good vibes
 
 
-D. Connect Alexa to ngrok
+##D. Connect Alexa to ngrok
 
 Use your forwarding addresses in the ngrok terminal to configure Amazon Alexa to point to your server, under Endpoints in Alexa Skills . Append the forwarding address as follows, so that the server knows to handle this in a unique way.
 
 https://a4a512d8.ngrok.io/alexa
 
-E. Configure Slack
+##E. Configure Slack
 ON APi.slack.com, creat a new app.
 Enable incoming webhooks.
 You will need to request admin approval from your slack workspace admin to be able to add this app and assign it to a channel.
@@ -71,18 +69,12 @@ Click on Add New Webhook to Workspace. You will be directed to a new page where 
 Select your channel, and you will be returned to incoming webhooks page. Copy the webhook URL for use in your external applciation, or use the Sample curl request.
 
 
+##User's Experience
+ - try to explain in detail what the user can expect to see at each step. I could add more detail and be a bit clearer, but I've spent more than four hours on it.
 
 
-
-
-
-
-User's Experience
- - try to explain in detail what the user can expect to see at each step.
-
-
-Familiarity
+##Familiarity
 Alexa Skills - none
 ngrok - none
 Rust - none
-Slack Webhooks - some familiarity - connecting existing webhooks
+Slack Webhooks - some familiarity - connecting existing webhooks. 
