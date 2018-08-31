@@ -1,0 +1,44 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "happy sat",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "SendGoodVibesIntent",
+                    "slots": [],
+                    "samples": [
+                        "send us alpha brain waves",
+                        "send good vibes to our makers",
+                        "send good vibes to our maker space",
+                        "send good vibes to our make day",
+                        "please send us good vibes",
+                        "send good vibes to make",
+                        "send good vibes",
+                        "send us good vibes"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
