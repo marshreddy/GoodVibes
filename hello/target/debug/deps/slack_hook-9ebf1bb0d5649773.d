@@ -1,0 +1,12 @@
+/Users/Marsh/Documents/GitHub/GoodVibes/hello/target/debug/deps/libslack_hook-9ebf1bb0d5649773.rlib: /Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/slack-hook-0.6.0/src/lib.rs /Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/slack-hook-0.6.0/src/macros.rs /Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/slack-hook-0.6.0/src/helper.rs /Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/slack-hook-0.6.0/src/error.rs /Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/slack-hook-0.6.0/src/hex.rs /Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/slack-hook-0.6.0/src/payload.rs /Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/slack-hook-0.6.0/src/attachment.rs /Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/slack-hook-0.6.0/src/slack.rs
+
+/Users/Marsh/Documents/GitHub/GoodVibes/hello/target/debug/deps/slack_hook-9ebf1bb0d5649773.d: /Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/slack-hook-0.6.0/src/lib.rs /Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/slack-hook-0.6.0/src/macros.rs /Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/slack-hook-0.6.0/src/helper.rs /Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/slack-hook-0.6.0/src/error.rs /Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/slack-hook-0.6.0/src/hex.rs /Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/slack-hook-0.6.0/src/payload.rs /Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/slack-hook-0.6.0/src/attachment.rs /Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/slack-hook-0.6.0/src/slack.rs
+
+/Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/slack-hook-0.6.0/src/lib.rs:
+/Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/slack-hook-0.6.0/src/macros.rs:
+/Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/slack-hook-0.6.0/src/helper.rs:
+/Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/slack-hook-0.6.0/src/error.rs:
+/Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/slack-hook-0.6.0/src/hex.rs:
+/Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/slack-hook-0.6.0/src/payload.rs:
+/Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/slack-hook-0.6.0/src/attachment.rs:
+/Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/slack-hook-0.6.0/src/slack.rs:

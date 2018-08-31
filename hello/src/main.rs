@@ -1,3 +1,5 @@
+extern crate slack_hook;
+use slack_hook::{Slack, PayloadBuilder};
 use std::io::prelude::*;
 use std::net::TcpStream;
 use std::net::TcpListener;
@@ -13,7 +15,7 @@ fn main() {
         let stream = stream.unwrap();
 
         handle_connection(stream);
-        post_to_offerzen();
+       
     }
 }
 
@@ -26,7 +28,7 @@ fn handle_connection(mut stream: TcpStream) {
 
      
     if buffer.starts_with(get) {
-        //This is the message that is sent to Alexa        
+        //This is the message that is sent to Alexa and to the offerzen satelite        
         let contents = fs::read_to_string("/Users/Marsh/Documents/GitHub/GoodVibes/hello/src/response.json").unwrap();
 
         let response = format!("HTTP/1.1 200 OK\r\n\r\n{}", contents);
@@ -36,10 +38,10 @@ fn handle_connection(mut stream: TcpStream) {
         stream.write(response.as_bytes()).unwrap();
         stream.flush().unwrap();
 
-        post_to_offerzen();
+        post_to_offerzen_sat();
 
     } else {
-
+        // This reads the response from the offerzen satellite, and then posts to slack.    
         let contents = fs::read_to_string("/Users/Marsh/Documents/GitHub/GoodVibes/hello/src/blank.json").unwrap();
 
         let response = format!("HTTP/1.1 200 OK\r\n\r\n{}", contents);
@@ -48,8 +50,29 @@ fn handle_connection(mut stream: TcpStream) {
 
         stream.write(response.as_bytes()).unwrap();
         stream.flush().unwrap();
+
+        let slack = Slack::new("https://hooks.slack.com/services/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").unwrap();
+        let p = PayloadBuilder::new()
+      .text("Good Vibes are coming!!!")
+      .build()
+      .unwrap();
+
+        let res = slack.send(&p);
+    match res {
+        Ok(()) => println!("ok"),
+        Err(x) => println!("ERR: {:?}",x)
+
     }
 }
 
-fn post_to_offerzen() {}
+fn post_to_offerzen_sat() {
+
+
+    
+}
+
+
+
+
+}
 

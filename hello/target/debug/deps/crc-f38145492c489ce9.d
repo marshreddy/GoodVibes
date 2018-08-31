@@ -1,0 +1,12 @@
+/Users/Marsh/Documents/GitHub/GoodVibes/hello/target/debug/deps/libcrc-f38145492c489ce9.rlib: /Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/crc-1.8.1/src/lib.rs /Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/crc-1.8.1/src/crc16.rs /Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/crc-1.8.1/src/crc32.rs /Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/crc-1.8.1/src/crc64.rs /Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/crc-1.8.1/src/util.rs /Users/Marsh/Documents/GitHub/GoodVibes/hello/target/debug/build/crc-101617eeef42da37/out/crc16_constants.rs /Users/Marsh/Documents/GitHub/GoodVibes/hello/target/debug/build/crc-101617eeef42da37/out/crc32_constants.rs /Users/Marsh/Documents/GitHub/GoodVibes/hello/target/debug/build/crc-101617eeef42da37/out/crc64_constants.rs
+
+/Users/Marsh/Documents/GitHub/GoodVibes/hello/target/debug/deps/crc-f38145492c489ce9.d: /Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/crc-1.8.1/src/lib.rs /Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/crc-1.8.1/src/crc16.rs /Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/crc-1.8.1/src/crc32.rs /Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/crc-1.8.1/src/crc64.rs /Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/crc-1.8.1/src/util.rs /Users/Marsh/Documents/GitHub/GoodVibes/hello/target/debug/build/crc-101617eeef42da37/out/crc16_constants.rs /Users/Marsh/Documents/GitHub/GoodVibes/hello/target/debug/build/crc-101617eeef42da37/out/crc32_constants.rs /Users/Marsh/Documents/GitHub/GoodVibes/hello/target/debug/build/crc-101617eeef42da37/out/crc64_constants.rs
+
+/Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/crc-1.8.1/src/lib.rs:
+/Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/crc-1.8.1/src/crc16.rs:
+/Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/crc-1.8.1/src/crc32.rs:
+/Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/crc-1.8.1/src/crc64.rs:
+/Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/crc-1.8.1/src/util.rs:
+/Users/Marsh/Documents/GitHub/GoodVibes/hello/target/debug/build/crc-101617eeef42da37/out/crc16_constants.rs:
+/Users/Marsh/Documents/GitHub/GoodVibes/hello/target/debug/build/crc-101617eeef42da37/out/crc32_constants.rs:
+/Users/Marsh/Documents/GitHub/GoodVibes/hello/target/debug/build/crc-101617eeef42da37/out/crc64_constants.rs:

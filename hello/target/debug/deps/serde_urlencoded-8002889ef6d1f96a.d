@@ -1,0 +1,11 @@
+/Users/Marsh/Documents/GitHub/GoodVibes/hello/target/debug/deps/libserde_urlencoded-8002889ef6d1f96a.rlib: /Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_urlencoded-0.5.3/src/lib.rs /Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_urlencoded-0.5.3/src/de.rs /Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_urlencoded-0.5.3/src/ser/mod.rs /Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_urlencoded-0.5.3/src/ser/key.rs /Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_urlencoded-0.5.3/src/ser/pair.rs /Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_urlencoded-0.5.3/src/ser/part.rs /Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_urlencoded-0.5.3/src/ser/value.rs
+
+/Users/Marsh/Documents/GitHub/GoodVibes/hello/target/debug/deps/serde_urlencoded-8002889ef6d1f96a.d: /Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_urlencoded-0.5.3/src/lib.rs /Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_urlencoded-0.5.3/src/de.rs /Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_urlencoded-0.5.3/src/ser/mod.rs /Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_urlencoded-0.5.3/src/ser/key.rs /Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_urlencoded-0.5.3/src/ser/pair.rs /Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_urlencoded-0.5.3/src/ser/part.rs /Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_urlencoded-0.5.3/src/ser/value.rs
+
+/Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_urlencoded-0.5.3/src/lib.rs:
+/Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_urlencoded-0.5.3/src/de.rs:
+/Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_urlencoded-0.5.3/src/ser/mod.rs:
+/Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_urlencoded-0.5.3/src/ser/key.rs:
+/Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_urlencoded-0.5.3/src/ser/pair.rs:
+/Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_urlencoded-0.5.3/src/ser/part.rs:
+/Users/Marsh/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_urlencoded-0.5.3/src/ser/value.rs:
